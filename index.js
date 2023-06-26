@@ -4,6 +4,9 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
 let x = 25
 let y = 25
 
@@ -17,11 +20,6 @@ if (x > y) {
       else if (x = y) {
         console.log (x, "e", y, "sono uguali")
       }
-      
-      
-    
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /*
 ESERCIZIO 2
@@ -33,6 +31,9 @@ ESERCIZIO 2
   num < 20 - mostra in console "Large"
   num >= 20 - mostra in console "Huge"
 */
+
+
+/* SCRIVI QUI LA TUA RISPOSTA */
 
 let num = 8
 
@@ -47,7 +48,6 @@ if (num < 5) {
 } else if ( num >= 20 ) {
   console.log("Huge")
 }
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 //ESERCIZI SUI CICLI: 
 
@@ -55,13 +55,34 @@ if (num < 5) {
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+for (number=0; number<=10; number++) {
+  
+  if ((number===3) || (number===8)) {
+    continue;
+  }
+
+  console.log("number:", number)
+}
+
 
 /* ESERCIZIO 11
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+for (numero=1; numero<=15; numero++) {
+  if ((numero % 2) === 0) {
+    console.log("il numero", numero, "è pari")
+  } else {
+    console.log("il numero", numero, "è dispari")
+  }
+ 
+}
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
