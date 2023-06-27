@@ -68,7 +68,7 @@ for (number=0; number<=10; number++) {
 }
 
 
-/* ESERCIZIO 11
+/* ESERCIZIO 04
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
@@ -91,8 +91,12 @@ for (numero=0; numero<=15; numero++) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let num2 = 8
-let num3 = 10
+
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+let num2 = 5
+let num3 = 3
 
 if ((num2===8)|| (num3===8)) {
 
@@ -102,7 +106,7 @@ else if ((num2 + num3)===8) {
 
   console.log ("la somma di", num2, "e", num3, "è 8")
 }
- else if ((num2 - num3)===8) {
+ else if ((num2 - num3)===8)  {
 
   console.log ("la sottrazione di", num2, "e", num3, "è 8")
 }
@@ -111,15 +115,16 @@ else if ((num3 - num2)===8) {
   console.log ("la sottrazione di", num3, "e", num2, "è 8")
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
 C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -127,6 +132,20 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let totalShoppingCart2 = 20
+
+
+let blackfriday = totalShoppingCart2 - ((totalShoppingCart2*20)/100)
+
+if (blackfriday > 50) {
+
+  console.log("hai la spedizione gratuita e il prodotto è scontanto del 20%! il totale è:", blackfriday)
+
+} else {
+  console.log("hai uno sconto del 20% il totale è:", blackfriday + 10)
+}
+
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -139,3 +158,24 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+
+for (numero2=0; numero2<=100; numero2++) {
+
+  if(numero2===0) {
+    console.log(numero2)
+    continue;
+  }
+  if (((numero2 % 3) === 0)&&((numero2 % 5) === 0)) {
+    console.log("FizzBuzz")
+    continue;
+  }
+  if ((numero2 % 3) === 0)  {
+    console.log("Fizz") 
+    continue;
+  } 
+  if ((numero2 % 5) === 0) {
+    console.log("Buzz")
+    continue;
+  }
+ console.log(numero2)
+}
