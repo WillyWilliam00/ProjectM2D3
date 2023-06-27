@@ -13,11 +13,10 @@ let y = 500
 if (x > y) {
   console.log (x, "è maggiore di", y)
   }  else if ( x < y ) {
-
     console.log (y, "è maggiore di", x)
   
       }
-      else if (x = y) {
+    else if (x = y) {
         console.log (x, "e", y, "sono uguali")
       }
 
@@ -58,7 +57,7 @@ if (num < 5) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-for (number=0; number<=10; number++) {
+for (number=0; number<=10; number++) { 
   
   if ((number===3) || (number===8)) {
     continue;
@@ -95,10 +94,10 @@ for (numero=0; numero<=15; numero++) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num2 = 5
-let num3 = 3
+let num2 = 0
+let num3 = 8
 
-if ((num2===8)|| (num3===8)) {
+if ((num2===8) || (num3===8)) {
 
   console.log("uno dei due numeri è uguale a 8")
 } 
@@ -124,6 +123,18 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let totalShoppingCart = 20
+
+
+
+if (totalShoppingCart > 50) {
+
+  console.log("hai la spedizione gratuita! il totale è:", totalShoppingCart)
+
+} else {
+  console.log("Il totale è:", totalShoppingCart + 10)
+}
+
 
 
 /* ESERCIZIO EXTRA 3
@@ -140,11 +151,12 @@ let blackfriday = totalShoppingCart2 - ((totalShoppingCart2*20)/100)
 
 if (blackfriday > 50) {
 
-  console.log("hai la spedizione gratuita e il prodotto è scontanto del 20%! il totale è:", blackfriday)
+  console.log("hai la spedizione gratuita e il prodotto è scontato del 20%! il totale è:", blackfriday)
 
 } else {
   console.log("hai uno sconto del 20% il totale è:", blackfriday + 10)
 }
+
 
 
 /*  ESERCIZIO EXTRA 4
@@ -155,28 +167,37 @@ if (blackfriday > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+
+let isMale = true
+let gender
+
+isMale ? (gender = "male") : (gender = "female")
+
+console.log(gender)
+
+
+
+
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
 
-for (numero2=0; numero2<=100; numero2++) {
 
-  if(numero2===0) {
-    console.log(numero2)
-    continue;
+for (i=0; i<=100; i++) {
+
+  let stamp = i
+  let multiplo3 = (i % 3) === 0
+  let multiplo5 = (i % 5) === 0
+
+   if (multiplo3 && multiplo5) {
+    stamp = "FizzBuzz"
   }
-  else if (((numero2 % 3) === 0)&&((numero2 % 5) === 0)) {
-    console.log("FizzBuzz")
-    continue;
-    
-  }
-  else if ((numero2 % 3) === 0)  {
-    console.log("Fizz") 
-    continue;
+  else if (multiplo3)  {
+    stamp = "Fizz"
   } 
-  else if ((numero2 % 5) === 0) {
-    console.log("Buzz")
-    continue;
+  else if (multiplo5) {
+    stamp = "Buzz"
   }
- console.log(numero2)
+ console.log(stamp)
 }
