@@ -165,15 +165,16 @@ for (numero2=0; numero2<=100; numero2++) {
     console.log(numero2)
     continue;
   }
-  if (((numero2 % 3) === 0)&&((numero2 % 5) === 0)) {
+  else if (((numero2 % 3) === 0)&&((numero2 % 5) === 0)) {
     console.log("FizzBuzz")
     continue;
+    
   }
-  if ((numero2 % 3) === 0)  {
+  else if ((numero2 % 3) === 0)  {
     console.log("Fizz") 
     continue;
   } 
-  if ((numero2 % 5) === 0) {
+  else if ((numero2 % 5) === 0) {
     console.log("Buzz")
     continue;
   }
