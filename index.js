@@ -7,8 +7,8 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let x = 25
-let y = 25
+let x = 75
+let y = 500
 
 if (x > y) {
   console.log (x, "è maggiore di", y)
@@ -75,7 +75,8 @@ for (number=0; number<=10; number++) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-for (numero=1; numero<=15; numero++) {
+for (numero=0; numero<=15; numero++) {
+  
   if ((numero % 2) === 0) {
     console.log("il numero", numero, "è pari")
   } else {
@@ -89,6 +90,26 @@ for (numero=1; numero<=15; numero++) {
 /* ESERCIZIO EXTRA 1
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+
+let num2 = 8
+let num3 = 10
+
+if ((num2===8)|| (num3===8)) {
+
+  console.log("uno dei due numeri è uguale a 8")
+} 
+else if ((num2 + num3)===8) {
+
+  console.log ("la somma di", num2, "e", num3, "è 8")
+}
+ else if ((num2 - num3)===8) {
+
+  console.log ("la sottrazione di", num2, "e", num3, "è 8")
+}
+else if ((num3 - num2)===8) {
+
+  console.log ("la sottrazione di", num3, "e", num2, "è 8")
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
