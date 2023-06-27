@@ -124,6 +124,7 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let totalShoppingCart = 20
+let costoSped = 10
 
 
 
@@ -132,7 +133,7 @@ if (totalShoppingCart > 50) {
   console.log("hai la spedizione gratuita! il totale è:", totalShoppingCart)
 
 } else {
-  console.log("Il totale è:", totalShoppingCart + 10)
+  console.log("Il totale è:", totalShoppingCart + costoSped)
 }
 
 
@@ -154,7 +155,7 @@ if (blackfriday > 50) {
   console.log("hai la spedizione gratuita e il prodotto è scontato del 20%! il totale è:", blackfriday)
 
 } else {
-  console.log("hai uno sconto del 20% il totale è:", blackfriday + 10)
+  console.log("hai uno sconto del 20% il totale è:", blackfriday + costoSped)
 }
 
 
@@ -190,7 +191,10 @@ for (i=0; i<=100; i++) {
   let multiplo3 = (i % 3) === 0
   let multiplo5 = (i % 5) === 0
 
-   if (multiplo3 && multiplo5) {
+  if (i === 0) {
+    stamp = i
+  }
+  else if (multiplo3 && multiplo5) {
     stamp = "FizzBuzz"
   }
   else if (multiplo3)  {
